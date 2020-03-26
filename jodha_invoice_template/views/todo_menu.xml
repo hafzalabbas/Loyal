@@ -1,0 +1,9 @@
+<odoo>
+     <act_window id="action_todo_task"
+                 name = "To-do Task"
+                 res_model="todo.task"
+                 view_mode="tree,form"/>
+        <menuitem id="menu_todotask"
+                  name="Todos"
+                  action="action_todo_task"/>
+</odoo>
