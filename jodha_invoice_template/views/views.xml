@@ -1,10 +1,10 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-    <!--
-    <record model="ir.ui.view" id="todo_app.list">
-      <field name="name">todo_app list</field>
-      <field name="model">todo_app.todo_app</field>
+<!--
+    <record model="ir.ui.view" id="jodha_invoice_template.list">
+      <field name="name">jodha_invoice_template list</field>
+      <field name="model">jodha_invoice_template.jodha_invoice_template</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
@@ -13,47 +13,48 @@
         </tree>
       </field>
     </record>
-    -->
+-->
 
     <!-- actions opening views on models -->
-    <!--
-    <record model="ir.actions.act_window" id="todo_app.action_window">
-      <field name="name">todo_app window</field>
-      <field name="res_model">todo_app.todo_app</field>
+<!--
+    <record model="ir.actions.act_window" id="jodha_invoice_template.action_window">
+      <field name="name">jodha_invoice_template window</field>
+      <field name="res_model">jodha_invoice_template.jodha_invoice_template</field>
       <field name="view_mode">tree,form</field>
     </record>
-    -->
+-->
 
     <!-- server action to the one above -->
-    <!--
-    <record model="ir.actions.server" id="todo_app.action_server">
-      <field name="name">todo_app server</field>
-      <field name="model_id" ref="model_todo_app_todo_app"/>
+<!--
+    <record model="ir.actions.server" id="jodha_invoice_template.action_server">
+      <field name="name">jodha_invoice_template server</field>
+      <field name="model_id" ref="model_jodha_invoice_template_jodha_invoice_template"/>
+      <field name="state">code</field>
       <field name="code">
         action = {
           "type": "ir.actions.act_window",
           "view_mode": "tree,form",
-          "res_model": self._name,
+          "res_model": model._name,
         }
       </field>
     </record>
-    -->
+-->
 
     <!-- Top menu item -->
-    <!--
-    <menuitem name="todo_app" id="todo_app.menu_root"/>
-    -->
+<!--
+    <menuitem name="jodha_invoice_template" id="jodha_invoice_template.menu_root"/>
+-->
     <!-- menu categories -->
-    <!--
-    <menuitem name="Menu 1" id="todo_app.menu_1" parent="todo_app.menu_root"/>
-    <menuitem name="Menu 2" id="todo_app.menu_2" parent="todo_app.menu_root"/>
-    -->
+<!--
+    <menuitem name="Menu 1" id="jodha_invoice_template.menu_1" parent="jodha_invoice_template.menu_root"/>
+    <menuitem name="Menu 2" id="jodha_invoice_template.menu_2" parent="jodha_invoice_template.menu_root"/>
+-->
     <!-- actions -->
-    <!--
-    <menuitem name="List" id="todo_app.menu_1_list" parent="todo_app.menu_1"
-              action="todo_app.action_window"/>
-    <menuitem name="Server to list" id="todo_app" parent="todo_app.menu_2"
-              action="todo_app.action_server"/>
-    -->
+<!--
+    <menuitem name="List" id="jodha_invoice_template.menu_1_list" parent="jodha_invoice_template.menu_1"
+              action="jodha_invoice_template.action_window"/>
+    <menuitem name="Server to list" id="jodha_invoice_template" parent="jodha_invoice_template.menu_2"
+              action="jodha_invoice_template.action_server"/>
+-->
   </data>
 </odoo>

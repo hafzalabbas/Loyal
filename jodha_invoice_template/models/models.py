@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields, api
+# from odoo import models, fields, api
 
-# class todo_app(models.Model):
-#     _name = 'todo_app.todo_app'
+
+# class jodha_invoice_template(models.Model):
+#     _name = 'jodha_invoice_template.jodha_invoice_template'
+#     _description = 'jodha_invoice_template.jodha_invoice_template'
 
 #     name = fields.Char()
 #     value = fields.Integer()
@@ -12,4 +14,5 @@ from odoo import models, fields, api
 #
 #     @api.depends('value')
 #     def _value_pc(self):
-#         self.value2 = float(self.value) / 100
+#         for record in self:
+#             record.value2 = float(record.value) / 100

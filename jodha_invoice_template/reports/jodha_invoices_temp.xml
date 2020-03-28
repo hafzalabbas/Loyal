@@ -1,0 +1,32 @@
+<odoo>
+    <data>
+       <template id="jodha_invoice">
+ <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="o">
+                <div class="header">
+                      <div class="row">
+                          <img t-att-src="'/jodha_invoice_template/static/src/img/logo.png'"/>
+                    </div>
+                      <div class="row">
+                              <div class="col-4">
+                    <h2>Report title</h2>
+                        </div>
+                        <div class="col-4">
+                    <p>This object's name is <span t-field="o.name"/></p>
+                        </div>
+                        <div class="col-4">
+                            TEST3
+                        </div>
+                        </div>
+
+                </div>
+
+            </t>
+    </t>
+
+
+
+</template>
+    </data>
+</odoo>
+
