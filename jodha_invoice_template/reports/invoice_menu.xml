@@ -4,7 +4,7 @@
     id="jodha_invoice_print"
     model="account.move"
     string="Invoice With Header"
-    report_type="qweb-pdf"
+    report_type="qweb-html"
     name="jodha_invoice_template.jodha_invoice"
     file="jodha_invoice_template.jodha_invoice"
     />
